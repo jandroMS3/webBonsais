@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="aboutUsStyles.css">
+
+</head>
+
+<body>
+    <h1>SOBRE NOSOTROS</h1>
+    <section class="aboutUSContainer">
+        <div class="column">
+            <div class="leftImg"><img src="./images/bonsai7.jpeg" alt="Imagen de bonsai"></div>
+
+        </div>
+        <div class="column" id="aboutUsText">
+            <p class="textOverlay">Somos una empresa que nace de la iniciativa de un grupo de amigos de toda la vida,de
+                hacer de nuestras pasiones; el medio ambiente, la naturaleza y más concretamente,
+                los bonsais, nuestra forma de vida. Trabajamos día a día para <del>ganarnos la vida con ello</del>
+                <ins>ofrecer nuestros servicios.</ins>
+                Con cada proyecto, siempre aprendemos algo nuevo y siempre estamos dispuestos a mejorar. <wbr>
+                <br>
+                <acronym title="Bonsais Online"> B.O.</acronym>
+            </p>
+
+        </div>
+        <div class="column">
+            <div class="rightImg">
+                <img src="./images/bonsai7.jpeg" alt="Imagen de bonsai">
+            </div>
+
+        </div>
+    </section>
+    <h2>¿POR QUÉ ELEGIRNOS??</h2>
+    <section class="chooseUs">
+        <div class="chooseUsContainer">
+
+            <p class="chooseUsText">Te podríamos dar nosotros los motivos para elegirnos, pero puedes elegirlos tú mismo
+                : </p>
+            <input list="whyChoose" id="car-make" name="whyChoose" placeholder="Las opciones" />
+            <datalist id="whyChoose">
+                <option value="Nuestra amabilidad">
+                <option value="Nuestro trabajo">
+                <option value="Nuestra simpatía">
+                <option value="Nuestros precios">
+                <option value="Nuestra responsabilidad">
+            </datalist>
+        </div>
+    </section>
+    <h2>PUEDES VOLVER AL INICIO,SI QUIERES....</h2>
+    <section class="returnHomeContainer">
+        <button class="glow-on-hover" id="glow-on-hover" type="button">Volver al inicio</button>
+    </section>
+</body>
+
+<script>
+    const botonRedireccionar = document.getElementById("glow-on-hover");
+
+    botonRedireccionar.addEventListener("click", function () {
+        window.location.href = "/Users/alejanamartinez2/Desktop/jandro/Solvam/webBonsais/index.html";
+    });
+</script>
+
+</html>

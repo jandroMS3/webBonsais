@@ -1,12 +1,18 @@
 # proyectoDiw
 
-Página realizada en html y css referente a una web de bonsais.
+Página realizada en html, css y js referente a una web de bonsais.
+
+Tiene una página sobre el iva y los envíos y una página de About us.
 
 Pagina de wix de referencia : 
 
-https://jandrosmartinez.wixsite.com/bonsais-online 
+https://jandrosmartinez.wixsite.com/bonsais-online
+
+Para descargarlo en git :
+
+git clone https://github.com/jandroMS3/webBonsais.git
 
 
 
 Author - Alejandro Martínez
-Centro  - Solvam estudios
+Centro  - Solvam Estudios

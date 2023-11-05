@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,13 @@
 
     <title>Bonsais online</title>
 
-    <!-- Enlaza tus archivos CSS aquí -->
-    <link rel="stylesheet" href="styles.css">
 
-    <!-- Enlaza tus archivos JavaScript aquí (opcional) -->
+    <link rel="stylesheet" href="indexStyles.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <script src="script.js"></script>
 </head>
+
 <body>
     <!-- Contenido de tu sitio web comienza aquí -->
     <header>
@@ -24,25 +26,25 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#Inicio">Nosotros</a></li>
+                    <li><a href="./aboutUs.html">Nosotros</a></li>
                     <li><a href="#Tienda">Tienda</a></li>
                     <li><a href="#Nosotros">Nosotros</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="banner">
-            <img src="/images/bonsais.webp" alt="Imagen de bonsái">
-            <div class="banner-text">
-                <p>Los mejores bonsáis al mejor precio</p>
-                <a href="#" class="bannerButton">Nosotros</a>
-            </div>
-        </div>
+
     </header>
-    
+    <div class="banner">
+        <img src="/images/bonsais.webp" alt="Imagen de bonsái">
+        <div class="banner-text">
+            <p>Los mejores bonsáis al mejor precio</p>
+            <a href="#" class="bannerButton">Nosotros</a>
+        </div>
+    </div>
+
 
     <main>
         <!-- Nuestros productos -->
-
         <div class="products-section">
             <h2 class="productsSectionTitle">Nuestros productos</h2>
             <div class="row">
@@ -51,39 +53,137 @@
                         <div class="productCardBody">
                             <img src="/images/bonsai2.jpeg" alt="muestra">
                         </div>
-                        <p class="productCardText">Precio</p>
+                        <p class="productCardText">Modelo 1 de bonsai</p>
+                        <p class="productCardPriceText"> 50,- €</p>
+                        <p class="productCardSubText"><a href="./ivaAndDeliveryInformation.html" target="_blank">Iva y
+                                envío incluido</a></a></p>
                         <div class="pie">
-                          <a href="#">Añadir a la cesta</a>
+                            <a href="#">Añadir a la cesta</a>
                         </div>
                     </div>
                 </div>
                 <div class="column">
-                    waiting ...
+                    <div class="tarjeta">
+                        <div class="productCardBody">
+                            <img src="/images/bonsai3.jpeg" alt="muestra">
+                        </div>
+                        <p class="productCardText">Modelo 2 de bonsai</p>
+                        <p class="productCardPriceText"> 60,- €</p>
+                        <p class="productCardSubText"><a href="./ivaAndDeliveryInformation.html" target="_blank">Iva y
+                                envío incluido</a></a></p>
+                        <div class="pie">
+                            <a href="#">Añadir a la cesta</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="column">
-                    waiting ...
+                    <div class="tarjeta">
+                        <div class="productCardBody">
+                            <img src="/images/bonsai4.jpg" alt="muestra">
+                        </div>
+                        <p class="productCardText">Modelo 3 de bonsai</p>
+                        <p class="productCardPriceText"> 70,- €</p>
+                        <p class="productCardSubText"><a href="./ivaAndDeliveryInformation.html" target="_blank">Iva y
+                                envío incluido</a></a></p>
+                        <div class="pie">
+                            <a href="#">Añadir a la cesta</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="row">
                 <div class="column">
-                    waiting ...                
+                    <div class="tarjeta">
+                        <div class="productCardBody">
+                            <img src="/images/bonsai5.jpg" alt="muestra">
+                        </div>
+                        <p class="productCardText">Modelo 4 de bonsai</p>
+                        <p class="productCardPriceText"> 80,- €</p>
+                        <p class="productCardSubText"><a href="./ivaAndDeliveryInformation.html" target="_blank">Iva y
+                                envío incluido</a></a></p>
+                        <div class="pie">
+                            <a href="#">Añadir a la cesta</a>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="column">
-                    waiting ...                    
+                    <div class="tarjeta">
+                        <div class="productCardBody">
+                            <img src="/images/bonsai6.jpeg" alt="muestra">
+                        </div>
+                        <p class="productCardText">Modelo 7 de bonsai</p>
+                        <p class="productCardPriceText"> 90,- €</p>
+                        <p class="productCardSubText"><a href="./ivaAndDeliveryInformation.html" target="_blank">Iva y
+                                envío incluido</a></a></p>
+                        <div class="pie">
+                            <a href="#">Añadir a la cesta</a>
+                        </div>
+                    </div>
                 </div>
+                <div class="column">
+
                 </div>
             </div>
         </div>
-        
-
-
+        </div>
+        </div>
     </main>
+    <section id="ourServices">
+        <div class="services-container">
+            <div class="services-image">
+                <img src="./images/aboutUs.jpeg" alt="Imagen de servicios" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="services-content">
+                <h3>Nuestros Servicios</h3>
+                <p>Desde Bonsais Online, ofrecemos cantidad de servicios que pueden ser aprovechados por nuestros
+                    clientes.
+                    Desde el servicio de venta y entrega de bonsais, hasta el asesoramiento a la hora de decorar
+                    espacios con nuestros productos.
+                    Tenemos también servicio de profesionales que ayudarán a que cuides los bonsáis de la mejor manera
+                    posible.
+                    Puedes ver todos nuestros servicios visitando nuestro catálogo.
+                </p>
+                <a href="#" class="catalog-button">Catálogo</a>
+            </div>
+        </div>
+    </section>
+    <h2 class="contactUsTitle">Contacta con nosotros</h2>
+    <section class="contactUs">
+
+        <div class="columnLeftContactUs">
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+        </div>
+        </div>
+        <div class="columnRightContactUs">
+            <img src="./images/contactUs.png" alt="Imagen de buzones en naturaleza">
+        </div>
+    </section>
 
     <footer>
-        <!-- Pie de página de tu sitio web va aquí -->
+        <footer class="footer">
+            <div class="social-icons">
+                <a href="#"><i class="lab la-instagram"></i></a>
+                <a href="#"><i class="lab la-facebook"></i></a>
+                <a href="#"><i class="lab la-whatsapp"></i></a>
+                <a href="#"><i class="lab la-twitter"></i></a>
+            </div>
+            <p>&copy; 2023 Bonsais Online Todos los derechos reservados.</p>
+        </footer>
     </footer>
 
-    <!-- Puedes enlazar otros recursos o scripts aquí -->
 
 </body>
+
 </html>

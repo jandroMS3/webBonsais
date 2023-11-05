@@ -1,0 +1,341 @@
+/* Variables de colores */
+:root {
+  /*Estilos de letra*/
+  font-family: "Courier New", Courier, monospace;
+
+  /*Estilos de color*/
+  --white: rgb(239, 238, 238);
+  --brown: rgb(39, 33, 30);
+  --black: rgb(0, 0, 0);
+  --green: rgb(0, 128, 0);
+  --yellow: rgb(249, 245, 4);
+  --grey: rgb(111, 110, 109);
+  --red: rgb(207, 10, 10);
+  --glass:rgba(255, 255, 255, .4);
+
+  /* Fondo sobre el que se mueve la web */
+  background-image: url('./images/bosque.jpg'); 
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: var(--glass);
+  color: var(--black);
+  text-align: center;
+  padding: 0 2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+}
+
+/* Estilos para el banner */
+.banner {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  max-height: 40rem;
+  object-fit: cover;
+}
+
+.banner-text {
+  color: var(--white);
+  background: rgba(0, 255, 0, 0.1);
+  border: 1.5px solid rgba(209, 213, 219, 0.3);
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.bannerButton {
+  background-color: transparent;
+  border-radius: 0 50px;
+  border: 0.4rem solid var(--yellow);
+  display: inline-block;
+  color: var(--white);
+  font-family: Arial;
+  font-size: 25px;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+.bannerButton:active {
+  position: relative;
+  top: 1px;
+}
+
+/* Estilos para el "Nuestros productos" */
+.products-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.productsSectionTitle {
+  text-align: center;
+  color: var(--white);
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 50px;
+}
+
+.column {
+  flex: 1;
+}
+/* Estilos para las cards de productos" */
+
+.tarjeta {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space space-between;
+  max-width: 65%;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius: 15px;
+  font-family: sans-serif;
+  background-color: var(--white);
+}
+.titulo {
+  font-size: 24px;
+  padding: 10px 10px 0 10px;
+}
+.productCardBody {
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+}
+.productCardBody img {
+    position: relative;
+  max-width: 100%;
+  max-height: 75%;
+  
+  transition: transform 0.3s ease-out;
+}
+.productCardBody img:hover{
+    transform: scale(1.02);
+}
+.productCardText {
+  text-align: center;
+  font-weight: bold;
+}
+.productCardPriceText {
+  text-align: center;
+  color: var(--red);
+  margin-top: 0.1rem;
+  font-size: 1.5rem;
+}
+.productCardSubText {
+  text-align: center;
+  color: var(--grey);
+  margin-top: 2px;
+}
+.productCardSubText a{
+  color: grey;
+}
+.productCardSubText a:hover{
+  text-decoration: none;
+  color: var(--grey);
+}
+.pie {
+  background: var(--green);
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+  text-align: center;
+}
+.pie a {
+  text-decoration: none;
+  color: var(--white);
+}
+.pie a:after {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+/* Sección de servicios */
+#ourServices{
+  margin-top: 4rem;
+}
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  color: var(--white);
+}
+
+.services-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-content {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--brown);
+}
+
+.services-content h3 {
+  font-size: 2.5rem;
+  margin-top: 7rem;
+}
+
+.services-content p {
+  font-size: 1.1rem;
+  margin: 3rem;
+  margin-bottom: 4rem;
+  text-align: justify;
+  
+}
+
+.catalog-button {
+  background-color: var(--white);
+  color: var(--brown);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+.catalog-button:hover{
+  text-decoration: none;
+}
+/* Estilos del formulario  */
+
+.contactUsTitle{
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--white);
+}
+.contactUs {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  margin-top: ¡4rem;
+}
+
+.columnLeftContactUs {
+  flex: 1;
+  background-color: var(--brown);
+  color: var(--white); 
+  padding: 30px;
+  margin-right: 2.5rem;
+  
+}
+
+.columnLeftContactUs form {
+  max-width: 50%;
+  margin-top: 3rem;
+  margin-left: 20%;
+}
+
+.columnLeftContactUs label,
+.columnLeftContactUs input,
+.columnLeftContactUs textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.columnLeftContactUs input,
+.columnLeftContactUs textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.columnLeftContactUs button {
+  background-color: var(--white);
+  color: var(--brown);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+.columnLeftContactUs button:hover{
+  text-decoration: none;
+}
+
+.columnRightContactUs {
+  flex: 1;
+  text-align: center;
+}
+
+.columnRightContactUs img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos del footer */
+
+.footer {
+  background-color: var(--brown); /* Fondo marrón */
+  color: var(--white); /* Texto blanco */
+  text-align: center;
+  padding: 20px;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+.social-icons i{
+  font-size: 64px;
+  color: var(--white);
+}
+
+
+.social-icons a {
+  margin: 0 10px;
+}
+
+
+
+
+
+
