@@ -12,6 +12,10 @@ Para descargarlo en git :
 
 git clone https://github.com/jandroMS3/webBonsais.git
 
+Para actualizar la rama con la que haya más actual :
+
+git pull
+
 
 
 Author - Alejandro Martínez
