@@ -60,7 +60,9 @@ h2 {
 .rightImg img {
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
-
+.img-hover-effect {
+    transform: scaleX(-1);
+}
 #aboutUsText {
     background-color: rgba(255, 255, 255, 0.3);
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);

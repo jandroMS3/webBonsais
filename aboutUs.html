@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <h1>SOBRE NOSOTROS</h1>
+    <h1 id="titleAboutUs">SOBRE NOSOTROS</h1>
     <section class="aboutUSContainer">
         <div class="column">
-            <div class="leftImg"><img src="./images/bonsai7.jpeg" alt="Imagen de bonsai"></div>
+            <div class="leftImg" id="imageAboutUs1" onmouseover="invertImage('imageAboutUs1')" onmouseout="resetImage('imageAboutUs1')"><img src="./images/bonsai7.jpeg" alt="Imagen de bonsai"></div>
 
         </div>
         <div class="column" id="aboutUsText">
@@ -29,13 +29,13 @@
 
         </div>
         <div class="column">
-            <div class="rightImg">
+            <div class="rightImg" id="imageAboutUs2" onmouseover="invertImage('imageAboutUs2')" onmouseout="resetImage('imageAboutUs2')">
                 <img src="./images/bonsai7.jpeg" alt="Imagen de bonsai">
             </div>
 
         </div>
     </section>
-    <h2>¿POR QUÉ ELEGIRNOS??</h2>
+    <h2>¿POR QUÉ ELEGIRNOS?</h2>
     <section class="chooseUs">
         <div class="chooseUsContainer">
 
@@ -53,16 +53,8 @@
     </section>
     <h2>PUEDES VOLVER AL INICIO,SI QUIERES....</h2>
     <section class="returnHomeContainer">
-        <button class="glow-on-hover" id="glow-on-hover" type="button">Volver al inicio</button>
+        <button class="glow-on-hover" id="botonVolverAlInicio" type="button">Volver al inicio</button>
     </section>
 </body>
-
-<script>
-    const botonRedireccionar = document.getElementById("glow-on-hover");
-
-    botonRedireccionar.addEventListener("click", function () {
-        window.location.href = "/Users/alejanamartinez2/Desktop/jandro/Solvam/webBonsais/index.html";
-    });
-</script>
-
+ <script src="./scriptsAboutUs.js"></script>
 </html>
