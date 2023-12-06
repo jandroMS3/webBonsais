@@ -1,0 +1,96 @@
+/* Variables de colores */
+:root {
+    /*Estilos de letra*/
+    font-family: "Courier New", Courier, monospace;
+
+    /*Estilos de color*/
+    --white: rgb(239, 238, 238);
+    --brown: rgb(39, 33, 30);
+    --black: rgb(0, 0, 0);
+    --green: rgb(0, 128, 0);
+    --yellow: rgb(249, 245, 4);
+    --grey: rgb(111, 110, 109);
+    --red: rgb(207, 10, 10);
+    --glass: rgba(255, 255, 255, .3);
+
+    /* Fondo sobre el que se mueve la web */
+    background-image: url('./images/bosque.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    flex: 1;
+    position: relative;
+    padding: 5rem;
+    background-color: var(--glass);
+    max-width: 35%;
+    height: 12rem;
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+#imagenIzquierda1, #imagenIzquierda2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    transition: opacity 3s ease;
+}
+#textoIzquierda{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+#botonDerecha1, #botonDerecha2 {
+    padding: 10px;
+    font-size: 2rem;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--glass);
+    border-radius: 0 50px;
+    border: 0.4rem solid var(--yellow);
+    display: inline-block;
+    color: var(--white);
+    font-family: Arial;
+    padding: 16px 31px;
+    text-decoration: none;
+  
+
+}
+
+#botonIzquierda1 {
+    padding: 10px;
+    font-size: 16px;
+    display: none;
+    margin: 0 auto;
+}
