@@ -36,4 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
       imagen.style.opacity = "0";
     }
   });
+  const botonRedireccionar = document.getElementById("botonVolverAlInicio");
+
+  botonRedireccionar.addEventListener("click", function () {
+    window.location.href = "./index.html";
+  });
 });
