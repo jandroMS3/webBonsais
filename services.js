@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Si no ha alcanzado el final, sigue animando
     if (leftValue < 100) {
-      
       requestAnimationFrame(animateImage);
     }
   }
@@ -25,16 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   //Función para hacer que la imagen se desvanezca
   // Agregamos un evento de clic al boton
-  var imagen = document.getElementById('imagenIzquierda2');
-  var boton = document.getElementById('botonDerecha2');
+  var imagen = document.getElementById("imagenIzquierda2");
+  var boton = document.getElementById("botonDerecha2");
 
-  boton.addEventListener('click', function() {
-      if (imagen.style.opacity === '0') {
-          // Si la opacidad es 0, pasarla a 1 para mostrar la imagen
-          imagen.style.opacity = '1';
-      } else {
-          // Si la opacidad no es 0, pasarla a 0 para desvanecer la imagen
-          imagen.style.opacity = '0';
-      }
+  boton.addEventListener("click", function () {
+    if (imagen.style.opacity === "0") {
+      // Si la opacidad es 0, pasarla a 1 para mostrar la imagen
+      imagen.style.opacity = "1";
+    } else {
+      // Si la opacidad no es 0, pasarla a 0 para desvanecer la imagen
+      imagen.style.opacity = "0";
+    }
   });
 });

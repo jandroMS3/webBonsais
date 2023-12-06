@@ -58,7 +58,8 @@ h1 {
     margin-right: 2rem;
 }
 
-#imagenIzquierda1, #imagenIzquierda2 {
+#imagenIzquierda1,
+#imagenIzquierda2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -66,12 +67,15 @@ h1 {
     pointer-events: none;
     transition: opacity 3s ease;
 }
-#textoIzquierda{
+
+#textoIzquierda {
     font-weight: bold;
     font-size: 1.2rem;
     color: var(--white);
 }
-#botonDerecha1, #botonDerecha2 {
+
+#botonDerecha1,
+#botonDerecha2 {
     padding: 10px;
     font-size: 2rem;
     display: block;
@@ -84,7 +88,7 @@ h1 {
     font-family: Arial;
     padding: 16px 31px;
     text-decoration: none;
-  
+
 
 }
 
